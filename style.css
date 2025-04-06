@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  padding: 0.8rem 4rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+}
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+header .right img {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .right h1 {
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.3rem;
+}
+header .left nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  justify-content: space-between;
+}
+header .left nav ul a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: lighter;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.3rem;
+  opacity: 0.8;
+}
+header .left nav ul button {
+  background-color: transparent;
+  color: rgb(223, 94, 94);
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+header .left nav ul .log-in {
+  background-color: rgb(20, 250, 212);
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all ease-in-out 0.3s;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+}
+main section {
+  width: 100%;
+  padding: 0 15vw;
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+}
+main section .content {
+  font-size: 1.5rem;
+  width: 100%;
+  border-top: 1px solid rgb(109, 109, 109);
+  padding: 3rem 0 3rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+main section .content img {
+  position: fixed;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  top: var(--mouse-y);
+  left: max(min(var(--mouse-x), 100vw - 26rem), var(--heading-width));
+  width: 10rem;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 0.75rem;
+}
+main section .content .bottom button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+main section .content .bottom button .icon {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  font-size: 1.8rem;
+  background-color: #353434;
+  border-radius: 5rem;
+  text-align: center;
+}
+main .discount {
+  display: grid;
+  place-items: start;
+  gap: 2rem;
+}
+main .discount h4 {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: lighter;
+}
+main .discount .blank-div {
+  padding: 4rem;
+  background-color: #fff;
+  width: 30%;
+  border-radius: 1rem;
+  color: #000;
+  text-align: center;
+}
+main .discount .blank-div h1 {
+  font-size: 3rem;
+}
+main .discount button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: rgb(6, 180, 128);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}

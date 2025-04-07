@@ -89,6 +89,27 @@ main {
   width: 100%;
   padding: 5rem 0;
 }
+main .hero {
+  margin-top: 5rem;
+  padding: 0 15vw;
+  position: relative;
+}
+main .hero .mouse {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: linear all 0.2s;
+  display: none;
+}
+main .hero h1 {
+  text-align: center;
+  font-size: 7vw;
+  letter-spacing: -0.3rem;
+}
 main section {
   width: 100%;
   padding: 0 15vw;
@@ -111,12 +132,12 @@ main section .content {
 }
 main section .content img {
   position: fixed;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale();
+  mix-blend-mode: difference;
+  opacity: 0;
   transform-origin: center;
   transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-  top: var(--mouse-y);
-  left: max(min(var(--mouse-x), 100vw - 26rem), var(--heading-width));
-  width: 10rem;
+  width: 7rem;
   aspect-ratio: 3/4;
   -o-object-fit: cover;
   object-fit: cover;

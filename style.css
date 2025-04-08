@@ -176,12 +176,14 @@ main .discount .blank-div {
   padding: 4rem;
   background-color: #fff;
   width: 30%;
+  font-weight: 900;
   border-radius: 1rem;
   color: #000;
   text-align: center;
 }
-main .discount .blank-div h1 {
-  font-size: 3rem;
+main .discount .blank-div .dis {
+  font-size: 4rem;
+  color: rgb(6, 180, 128);
 }
 main .discount button {
   font-size: 1.2rem;
